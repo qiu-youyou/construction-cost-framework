@@ -1,0 +1,199 @@
+@import (reference) '~antd/es/style/themes/index';
+
+//  卡片样式
+:global .fullscreen {
+  height: 100%;
+}
+
+.baseCardSection,
+.baseCardSectionNoHeader {
+  height: 100%;
+  .ProCardChildren {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+
+  :global .ant-pro-card.BaseProCard {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    // 卡片头部样式
+    .ant-pro-card-header {
+      position: sticky;
+      top: 0px;
+      z-index: 2;
+      min-width: 10px;
+      padding: 0 1px 0 5px;
+      white-space: nowrap;
+      background-color: #fff;
+      // 标题
+      .ant-pro-card-title {
+        font-size: 12px;
+        transform: translateY(1px);
+      }
+    }
+
+    // 卡片操作区
+    .ant-pro-card-extra,
+    .ant-tabs-extra-content {
+      line-height: 0;
+      :global(.extraBtn .ant-btn:not(.ant-btn-lg)) {
+        width: 22px;
+        height: 22px;
+        padding: 1px;
+        color: @primary-6;
+        font-size: 13px;
+        line-height: 16px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        transform: translateX(1px);
+      }
+    }
+
+    .ant-tabs-extra-content {
+      padding-right: 4px;
+    }
+
+    // 卡片内容样式
+    .ant-pro-card-body {
+      height: calc(100% - 24px);
+      // height: 100%;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    // 标签页内容样式
+    .ant-pro-card-tabs {
+      height: calc(100% - 28px);
+      // 高度
+      .ant-tabs,
+      .ant-tabs-content {
+        height: 100% !important;
+        .ant-tabs-tabpane {
+          height: 100% !important;
+          > .ant-pro-card {
+            height: 100% !important;
+            > .ant-pro-card-body {
+              height: 100% !important;
+            }
+          }
+        }
+      }
+
+      .ant-tabs-top > .ant-tabs-nav {
+        background-color: #fff;
+        .ant-tabs-nav-list {
+          margin-top: 0;
+          .ant-tabs-tab {
+            padding: 4px 8px;
+            font-size: 13px;
+            .ant-tabs-tab-btn {
+              transform: translateY(-1px);
+            }
+          }
+          .ant-tabs-tab + .ant-tabs-tab {
+            margin: 0 0 0 24px;
+          }
+        }
+      }
+
+      // 卡片风格
+      .ant-tabs-card > .ant-tabs-nav {
+        .ant-tabs-nav-list {
+          margin-top: 2px;
+          padding-left: 4px;
+          .ant-tabs-tab {
+            padding: 2px 16px;
+            overflow: hidden;
+            font-size: 13px;
+            border-radius: 3px 3px 0 0;
+          }
+          .ant-tabs-tab + .ant-tabs-tab {
+            margin: 0 0 0 4px;
+          }
+        }
+      }
+
+      /** tabs全局样式 */
+      /* stylelint-disable-next-line no-duplicate-selectors */
+      .ant-tabs-card > .ant-tabs-nav {
+        .ant-tabs-tab {
+          color: #fff;
+          font-size: 13px;
+          background-color: @primary-4;
+          // background-color: #e3ebf7;
+          // border: 1px solid @primary-2;
+          border-bottom: none;
+          .anticon {
+            margin-right: 4px;
+            font-size: 12px;
+          }
+        }
+
+        .ant-tabs-tab-active {
+          background-color: #fff;
+          border-color: @primary-4;
+        }
+      }
+
+      .ant-tabs-content-holder {
+        margin-top: 4px;
+        overflow-x: hidden;
+        background-color: #fff;
+        // &::before {
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   right: 0;
+        //   bottom: 0;
+        //   content: '';
+        //   z-index: 9;
+        //   background-color: rgba(#fff, 0.6);
+        // }
+      }
+    }
+  }
+
+  :global .ant-pro-card.BaseProCard.hasBgc > {
+    .ant-pro-card-header {
+      z-index: 9 !important;
+      min-height: 24px;
+      padding: 1px 4px 1px 4px;
+      // background-color: #dce6f3;
+      // background-color: #e3ebf7;
+      background-color: #e3ebf7;
+      // background-color: rgba(@primary-4, 0.2);
+      // 标题
+      .ant-pro-card-title {
+        color: @primary-6;
+        font-size: 12px;
+      }
+    }
+  }
+
+  :global(.ant-pro-card-header-border) {
+    min-height: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  }
+  // 折叠后
+  :global(.ant-pro-card-collapse > .ant-pro-card-header) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  }
+}
+
+.baseCardSectionNoHeader {
+  > :global(.fullscreen > .ant-pro-card.BaseProCard > .ant-pro-card-header) {
+    display: none;
+  }
+  > :global(.fullscreen > .ant-pro-card.BaseProCard > .ant-pro-card-body) {
+    height: 100% !important;
+  }
+  > :global(.fullscreen > .ant-pro-card.BaseProCard > .ant-pro-card-tabs) {
+    height: 100% !important;
+  }
+  > :global(.fullscreen > .ant-pro-card.BaseProCard > .ant-pro-card-tabs .ant-tabs-top > .ant-tabs-nav) {
+    margin-top: 0 !important;
+  }
+}

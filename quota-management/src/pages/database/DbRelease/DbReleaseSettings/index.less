@@ -1,0 +1,53 @@
+.dbRelaeaseSettingsWrapper {
+  :global(.ant-space) {
+    padding: 3px 10px;
+  }
+  :global(.ant-form) {
+    margin-top: 20px;
+    .ant-row {
+      margin: 0;
+    }
+  }
+
+  :global(.ant-form .ant-form-item) {
+    margin-bottom: 34px;
+  }
+
+  :global(.ant-form .ant-form-item-label > label) {
+    margin-bottom: 2px;
+  }
+  :global(.ant-form label) {
+    font-size: 13px !important;
+  }
+  :global(.ant-input-number-input) {
+    height: 25px;
+  }
+
+  :global(span.ant-radio + *) {
+    transform: translateY(-1.5px);
+  }
+
+  :global(.ant-col-6) {
+    flex: 0 0 150px;
+    max-width: 150px;
+  }
+
+  :global(.ant-col.ant-col-345px) {
+    width: 345px;
+  }
+  :global(.ant-col.ant-col-auto) {
+    flex: 0 0 50%;
+    @media screen and (max-width: 1400px) {
+      flex: 0 0 30%;
+      flex: 0 0 30%;
+    }
+    @media screen and (max-width: 900px) {
+      flex: 0 0 5%;
+      flex: 0 0 5%;
+    }
+  }
+}
+
+.dbRelaeaseSettingsBtns {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+}

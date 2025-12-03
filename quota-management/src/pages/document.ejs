@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="icon" href="<%= context.config.publicPath +'favicon.ico'%>" type="image/x-icon" />
+  <title>中南院</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <noscript>
+    <div class="noscript-container">
+      Hi there! Please
+      <div class="noscript-enableJS">
+        <a href="https://www.enablejavascript.io/en" target="_blank" rel="noopener noreferrer">
+          <b>enable Javascript</b>
+        </a>
+      </div>
+      <style>
+        .noscript-container {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          margin-top: 90px;
+          font-size: 20px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .noscript-enableJS {
+          padding-right: 3px;
+          padding-left: 3px;
+        }
+      </style>
+    </div>
+  </noscript>
+</body>
+<script src="<%= context.config.publicPath +'encrypt.js'%>"></script>
+<script>
+  window.onload = function () {
+    window.JSEncrypt = JSEncrypt
+  }
+</script>
+
+</html>

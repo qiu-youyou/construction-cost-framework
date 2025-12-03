@@ -1,0 +1,44 @@
+/*
+ * @Author: SHUANG
+ * @Date: 2022-06-20 10:05:28
+ * @LastEditors: s_qiu s.qiu@foxmail.com
+ * @LastEditTime: 2022-07-29 11:33:52
+ * @Description: 全局通用的 className
+ */
+
+// 启用
+.EnableStatus {
+  color: #08979c;
+  &:hover,
+  &:focus {
+    color: rgba(#08979c, 0.7) !important;
+  }
+}
+
+.DisableStatus {
+  color: #d4b106;
+  &:hover,
+  &:focus {
+    color: rgba(#d4b106, 0.7) !important;
+  }
+}
+
+.SaveStatus {
+  color: @primary-5;
+  &:hover,
+  &:focus {
+    color: @primary-4 !important;
+  }
+}
+
+// 图标按钮
+.IconButton {
+  margin: 0 3px;
+  color: rgba(#000, 0.85);
+  color: @primary-6;
+  font-size: 13px;
+  cursor: pointer;
+  &:hover {
+    color: @primary-5;
+  }
+}

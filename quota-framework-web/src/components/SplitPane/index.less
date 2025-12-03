@@ -1,0 +1,54 @@
+:global(.w-split-vertical > .w-split-bar) {
+  height: 4px;
+  // overflow: hidden;
+}
+:global(.w-split-horizontal > .w-split-bar) {
+  z-index: 9 !important;
+  width: 4px;
+  // overflow: hidden;
+}
+.paneContainer {
+  overflow-y: auto;
+}
+
+.paneToggleBtnH {
+  z-index: 1;
+  display: inline-block;
+  width: 5px;
+  height: 50px;
+  margin: 5px 0;
+  margin-left: 1px;
+  overflow: hidden;
+  line-height: 50px;
+  background-color: #cdcdcd;
+  border-radius: 0 100px 100px 0;
+  cursor: pointer;
+  :global(.anticon svg) {
+    width: 16px;
+    margin-left: -6px;
+    color: #fff;
+  }
+  // background-color: red;
+}
+
+.paneToggleBtnV {
+  z-index: 1;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  margin: 0 5px;
+  // margin-top: 4px;
+  overflow: hidden;
+  line-height: 0;
+  text-align: center;
+  background-color: #cdcdcd;
+  border-radius: 100px 100px 0 0;
+  cursor: pointer;
+  :global(.anticon svg) {
+    width: 16px;
+    margin-top: -3px;
+    color: #fff;
+    transform: rotate(180deg);
+  }
+  // background-color: red;
+}

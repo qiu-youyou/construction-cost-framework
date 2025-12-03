@@ -1,0 +1,71 @@
+/*
+ * @Author: SHUANG
+ * @Date: 2022-06-16 17:28:41
+ * @LastEditors: s_qiu s.qiu@foxmail.com
+ * @LastEditTime: 2023-09-11 18:03:39
+ * @Description: 页面骨架屏样式
+ */
+.ant-skeleton {
+  padding: 0 5px;
+  // 距离顶部归零
+  .ant-skeleton-content .ant-skeleton-title {
+    margin-top: 10px;
+  }
+  .ant-skeleton-content .ant-skeleton-paragraph {
+    margin-top: 10px;
+    > li {
+      height: 15px;
+      margin-top: 7px;
+    }
+  }
+}
+
+.ProSkeleton > div {
+  > div {
+    display: none;
+  }
+  > div:last-child {
+    display: block;
+    .ant-card-body div {
+      padding: 0.9px 4px !important;
+      span.ant-skeleton-button.ant-skeleton-button-sm {
+        height: 20px;
+        margin-bottom: 6px !important;
+        line-height: 20px;
+      }
+    }
+    > * .ant-skeleton-title {
+      height: 14px !important;
+    }
+  }
+}
+
+.BaseTableSkeleton {
+  height: 100%;
+  overflow: hidden;
+  > div {
+    background-color: #fff;
+    > div:first-child {
+      display: none !important;
+    }
+    > div:nth-child(2) {
+      .ant-card-body > div:nth-child(3) {
+        display: none !important;
+      }
+    }
+    > div:last-child {
+      display: block;
+      .ant-card-body div {
+        padding: 2px 4px !important;
+        span.ant-skeleton-button.ant-skeleton-button-sm {
+          height: 20px;
+          margin-bottom: 6px !important;
+          line-height: 20px;
+        }
+      }
+      > * .ant-skeleton-title {
+        height: 14px !important;
+      }
+    }
+  }
+}

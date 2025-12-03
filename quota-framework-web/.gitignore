@@ -1,0 +1,28 @@
+# dependencies
+/node_modules
+/npm-debug.log*
+/yarn-error.log
+/package-lock.json
+/yarn.lock
+/.svn
+
+
+# production
+/dist
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+
+# umi
+/src/.umi
+/src/.umi-production
+/src/.umi-test
+/.env.local
+
+# visual studio code
+*.log
+.history
+functions/*
+.temp/**

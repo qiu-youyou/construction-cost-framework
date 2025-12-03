@@ -1,0 +1,109 @@
+// 菜单样式
+@menu-icon-right: 5px; // 菜单标题图标距离右侧
+@menu-submenu-title-left: 6px; // 菜单一级标题距离左侧
+@menu-submenu-subtitle-left: 22px; // 子级菜单标题距离左侧
+
+// 侧边栏通用样式
+.ant-pro-sider,
+.ant-pro-sider.ant-layout-sider-collapsed {
+  // 顶部 logo+title
+  .ant-pro-sider-logo {
+    padding: 11px 10px !important;
+    img {
+      width: 34px;
+      height: 34px;
+    }
+    h1 {
+      margin-left: 2px !important;
+      text-align: center;
+      line-height: 33px;
+      width: 85px;
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .ant-menu-item .ant-menu-item-icon + span,
+  .ant-menu-submenu-title .ant-menu-item-icon + span,
+  .ant-menu-item .anticon + span,
+  .ant-menu-submenu-title .anticon + span {
+    margin-left: 4px !important;
+  }
+  .ant-menu-submenu-title .anticon {
+    font-size: 13px !important;
+    transform: translateY(0.5px) !important;
+  }
+}
+
+.ant-pro-sider.ant-layout-sider-collapsed {
+  .ant-pro-sider-logo {
+    padding: 11px 7px !important;
+  }
+}
+
+// 侧边菜单栏布局
+.ant-menu-inline {
+  .ant-menu-sub .ant-menu-item-only-child {
+    padding-left: @menu-submenu-subtitle-left !important;
+  }
+  .ant-menu-item,
+  .ant-menu-submenu-title {
+    padding-left: @menu-submenu-title-left !important;
+    .ant-menu-submenu-title {
+      padding-left: 30px !important;
+    }
+  }
+}
+
+// 暗色菜单 样式
+.ant-pro-sider.ant-layout-sider-dark {
+  background-color: @primary-6 linear-gradient(0deg, @primary-6 @primary-7);
+  background-color: @primary-6;
+
+  .ant-menu.ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub,
+  .ant-menu.ant-menu-dark .ant-menu-sub {
+    background: none !important;
+  }
+
+  .ant-menu-dark .ant-menu-item:hover,
+  .ant-menu-dark .ant-menu-submenu-title:hover {
+    background: @primary-5;
+  }
+  .ant-menu-dark .ant-menu-item,
+  .ant-menu-dark .ant-menu-item-group-title,
+  .ant-menu-dark .ant-menu-item > a,
+  .ant-menu-dark .ant-menu-item > span > a {
+    color: @white;
+  }
+  .ant-menu.ant-menu-dark .ant-menu-sub {
+    background: @primary-7 !important;
+    color: @white;
+    text-indent: 6px;
+  }
+
+  // 菜单文字
+  .ant-menu.ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub {
+    color: #fff;
+  }
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: @primary-4;
+  }
+}
+
+// 暗色菜单折叠后
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  background: @primary-6;
+  color: @white;
+}
+
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item > a,
+.ant-menu-dark .ant-menu-item > span > a {
+  color: @white;
+}

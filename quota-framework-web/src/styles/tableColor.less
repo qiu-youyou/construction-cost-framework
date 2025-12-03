@@ -1,0 +1,289 @@
+@import './coloriable.less';
+
+.base-table-section .ant-pro-table {
+  // TH
+  .ant-table-thead > tr {
+    > th {
+      color: @primary-6;
+      font-weight: 600;
+      // background-color: @theader-color;
+    }
+  }
+
+  // Tbody
+  // 隔行变色 < 鼠标滑过变色  < 当前行颜色 < 多行勾选颜色
+  .ant-table-tbody {
+    // 隔行变色
+    > tr.ant-table-row--striped {
+      td {
+        background-color: @striped-color;
+      }
+    }
+
+    // 鼠标划过变色
+    > tr:hover td {
+      background-color: @hover-color;
+    }
+
+    // 当前勾选行
+    > tr.ant-table-row-selected {
+      td {
+        color: #0d0d0d;
+        background-color: @selection-color;
+        > .ant-typography {
+          color: #0d0d0d;
+        }
+      }
+    }
+
+    > tr.ant-table-row-copy {
+      td {
+        color: #0d0d0d;
+        // background: #f9f0ff !important;
+        > .ant-typography {
+          color: #0d0d0d;
+        }
+      }
+    }
+
+    // 当前选中行
+    > tr.ant-table-row-currented {
+      td {
+        color: #0d0d0d;
+        background-color: @current-color;
+        > .ant-typography {
+          color: #0d0d0d;
+        }
+      }
+    }
+
+    > tr.ant-table-row-cut {
+      td {
+        color: #0d0d0d;
+        // background: #fff2e8 !important;
+        > .ant-typography {
+          color: #0d0d0d;
+        }
+      }
+    }
+
+    // 父级别行
+    > tr.ant-table-row-parent {
+      td {
+        color: #0d0d0d;
+        background-color: #eee;
+        > .ant-typography {
+          color: #0d0d0d;
+        }
+      }
+    }
+
+    // 作废状态 删除线
+    > tr.ant-table-row-mainAnnulY {
+      td:not(.ant-table-cell-fix-lefts) {
+        // position: relative !important;
+        color: red !important;
+        .ant-typography {
+          color: red !important;
+        }
+        &::before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          left: 0;
+          z-index: 1;
+          height: 1px;
+          background: red !important;
+          content: '';
+        }
+      }
+    }
+
+    > tr.ant-table-row-mainAnnulY-currented {
+      td:not(.ant-table-cell-fix-lefts) {
+        // position: relative !important;
+        color: red !important;
+        background-color: @current-color;
+        .ant-typography {
+          color: red !important;
+          background-color: @current-color;
+        }
+        &::before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          left: 0;
+          z-index: 1;
+          height: 1px;
+          background: red !important;
+          content: '';
+        }
+      }
+    }
+
+    // 作废状态 接口删除 红色字
+    > tr.ant-table-row-mainAnnulD {
+      td:not(.ant-table-cell-fix-lefts) {
+        // position: relative !important;
+        color: red !important;
+        .ant-typography {
+          color: red !important;
+        }
+      }
+    }
+
+    > tr.ant-table-row-mainAnnulD-currented {
+      td:not(.ant-table-cell-fix-lefts) {
+        // position: relative !important;
+        color: red !important;
+        background-color: @current-color;
+        .ant-typography {
+          color: red !important;
+          background-color: @current-color;
+        }
+      }
+    }
+
+    // 删除 删除线
+    > tr.ant-table-row-deletion {
+      td:not(.ant-table-cell-fix-lefts) {
+        // position: relative !important;
+        color: red !important;
+        .ant-typography {
+          color: red !important;
+        }
+        &::before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          left: 0;
+          z-index: 1;
+          height: 1px;
+          background: red !important;
+          content: '';
+        }
+      }
+    }
+
+    > tr.ant-table-row-deletion-currented {
+      td:not(.ant-table-cell-fix-lefts) {
+        // position: relative !important;
+        color: red !important;
+        background-color: @current-color;
+        .ant-typography {
+          color: red !important;
+          background-color: @current-color;
+        }
+        &::before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          left: 0;
+          z-index: 1;
+          height: 1px;
+          background: red !important;
+          content: '';
+        }
+      }
+    }
+
+    > tr.ant-table-row-tree-nullify-currented {
+      td:not(.ant-table-cell-fix-lefts) {
+        // position: relative !important;
+        color: red !important;
+        background-color: @striped-color;
+        .ant-typography {
+          color: red !important;
+          background-color: @striped-color;
+        }
+        &::before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          left: 0;
+          z-index: 1;
+          height: 1px;
+          background: red !important;
+          content: '';
+        }
+      }
+    }
+  }
+
+  .ant-table-tbody > tr.ant-table-placeholder:hover td {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+  .ant-table-empty .ant-table-tbody > tr.ant-table-placeholder td.ant-table-cell {
+    border: none !important;
+  }
+}
+
+// 有边框的表格
+// .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > thead > tr > th,
+// .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tbody > tr > td {
+//   // border-right: 1px solid @primary-2 !important;
+//   // border-bottom: 1px solid @primary-2;
+// }
+
+.ant-table.ant-table-bordered
+  > .ant-table-container
+  > .ant-table-body
+  > table
+  > tbody
+  > tr
+  > td
+  > .ant-table-expanded-row-fixed::after {
+  display: none;
+}
+
+.ant-table.ant-table-bordered > .ant-table-container {
+  // border: 1px solid @primary-2;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ant-table-ping-left:not(.ant-table-has-fix-left) .ant-table-container::before,
+.ant-table-ping-right:not(.ant-table-has-fix-right) .ant-table-container::after {
+  display: none;
+}
+
+.star,
+.starTow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 14px !important;
+  transform: translate(-50%, -48%);
+  cursor: pointer;
+  span.anticon.anticon-star {
+    color: rgb(143, 143, 143) !important;
+  }
+}
+.starTow {
+  span.anticon.anticon-star {
+    path {
+      fill: @primary-6;
+    }
+  }
+}
+
+// 搜索toolbar
+.certain-category-search-dropdown {
+  .ant-select-item a {
+    position: absolute;
+    right: 10px;
+    .anticon {
+      margin-right: -5px;
+      font-size: 13px;
+    }
+  }
+  .ant-select-item {
+    min-height: 20px;
+    padding: 2px 10px;
+    font-size: 12px;
+  }
+}
+
+button.ant-btn.ant-btn-default.ant-btn-icon-only.ant-input-search-button {
+  height: 24px !important;
+}

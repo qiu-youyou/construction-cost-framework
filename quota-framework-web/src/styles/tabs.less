@@ -1,0 +1,51 @@
+// 标签页的边框颜色
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-bottom: none;
+}
+
+// 标签页的关闭按钮
+.ant-tabs-tab-remove {
+  margin-right: -8px;
+  margin-left: 2px;
+  font-size: 11px;
+  transform: translateY(-1.5px);
+}
+
+// 超出宽度按钮
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-more,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-more {
+  padding: 2.8px 10px;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before {
+  border-bottom: 1px solid rgba(#000, 0.1) !important;
+}
+
+.ant-tabs.ant-tabs-left {
+  height: 100% !important;
+  .ant-tabs-content.ant-tabs-content-left {
+    height: 100% !important;
+  }
+  .ant-tabs-tab div {
+    letter-spacing: 3px;
+    writing-mode: vertical-lr !important;
+  }
+  .ant-tabs-nav {
+    min-width: 15px !important;
+    .ant-tabs-tab {
+      padding: 8px 6px;
+    }
+  }
+}
+
+.ant-tabs-left
+  > .ant-tabs-content-holder
+  > .ant-tabs-content
+  > .ant-tabs-tabpane {
+  padding-left: 0 !important;
+}

@@ -1,0 +1,49 @@
+@import '~antd/es/style/variable.less';
+
+.answerList {
+  padding: 0 10px 10px 10px;
+
+  :global(.ant-list-item-meta) {
+    margin-bottom: 4px;
+    border-bottom: none;
+  }
+
+  :global(.ant-list-item) {
+    padding: 8px 6px 0 6px !important;
+    border-bottom: none !important;
+  }
+
+  :global(.ant-list-item-meta-title) {
+    margin-bottom: 0 !important;
+    color: rgba(0, 0, 0, 1) !important;
+    font-weight: 400 !important ;
+    font-size: 12px !important;
+  }
+
+  :global(.ant-list-item-meta-description) {
+    padding: 0 8px !important;
+    color: rgba(0, 0, 0, 0.75) !important;
+  }
+
+  :global(.ant-list-header) {
+    padding: 5px 0 !important;
+    font-size: 13px !important;
+  }
+
+  .answerContent {
+    margin: 0;
+    padding: 4px 8px;
+    padding-right: 40px;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #fbfafb;
+    border: 1px solid #eee;
+  }
+
+  .messageAction {
+    margin-left: 10px;
+    color: @primary-6;
+    font-weight: 400 !important;
+    border-bottom: 1px solid @primary-6;
+    cursor: pointer;
+  }
+}

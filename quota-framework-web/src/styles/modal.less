@@ -1,0 +1,314 @@
+/*
+ * @Author: SHUANG
+ * @Date: 2022-06-23 09:50:01
+ * @LastEditors: s_qiu s.qiu@foxmail.com
+ * @LastEditTime: 2024-02-21 10:51:27
+ * @Description: 弹窗样式
+ */
+
+.ant-modal {
+  // 标题文字
+  .ant-modal-header {
+    padding: 2px 12px;
+    color: @white;
+    text-align: left !important;
+    background-color: @primary-6;
+    .ant-modal-title {
+      color: @white;
+    }
+    .ArrowsShrinkIcon {
+      float: right;
+      height: 22px;
+      margin-right: 26px;
+      color: @white;
+      font-size: 16px;
+      line-height: 27px;
+      cursor: pointer;
+      &:hover {
+        color: #ffffffda;
+      }
+    }
+  }
+
+  // 关闭按钮
+  .ant-modal-close-x {
+    width: 36px;
+    height: 31px;
+    color: @white;
+    line-height: 25px;
+    &:hover {
+      color: #ffffffda;
+    }
+  }
+
+  .ant-modal-body {
+    position: relative;
+    width: 100%;
+    // max-height: 70vh;
+    padding: 0;
+    overflow-y: auto;
+    // overflow-x: hidden;
+    .ant-pro-page-container-children-content {
+      margin: 0;
+      padding: 0;
+    }
+    // background: #000;
+  }
+
+  // 底部
+  .ant-modal-footer {
+    padding: 2px 12px;
+  }
+
+  // Modal Form 表单
+  .ant-form,
+  .ant-pro-steps-form {
+    // margin: 6px 0 -6px 0;
+    // padding: 6px 0 0 0;
+    padding: 6px 0 6px 0;
+
+    .ant-pro-steps-form-step {
+      margin-top: 5px;
+    }
+    .ant-pro-steps-form-steps-container {
+      margin: 10px auto;
+    }
+    .ant-form-item {
+      margin-bottom: 11px;
+    }
+
+    .ant-steps-item-icon {
+      width: 30px;
+      height: 30px;
+      line-height: 28px;
+    }
+    .ant-steps-item-icon,
+    .ant-steps-item-content {
+      vertical-align: baseline !important;
+    }
+
+    .ant-pro-steps-form-container > .ant-space-align-center {
+      width: 100%;
+      > .ant-space-item {
+        width: 100%;
+      }
+    }
+    .SchemaFormFooter {
+      // margin: 0 -16px -10px -16px;
+      // padding: 3px 2px;
+      padding: 5px 6px 0 6px;
+      text-align: right;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .ant-divider-horizontal {
+      margin-top: 10px;
+    }
+    // 重置元素
+    .ant-form-item-label > label {
+      min-height: 27px;
+      height: 27px;
+      color: @primary-6;
+      font-weight: 500;
+    }
+    .ant-input-affix-wrapper {
+      height: 27px;
+    }
+    textarea.ant-input {
+      min-height: 27px;
+      height: 27px;
+      line-height: 1.5337;
+    }
+    .ant-select-selector,
+    .ant-form-item-control-input {
+      min-height: 27px;
+      // height: 27px;
+    }
+    .ant-input-number-input {
+      min-height: 25.5px;
+      height: 25.5px;
+    }
+
+    .ant-input-affix-wrapper,
+    .ant-picker {
+      width: 100%;
+      padding: 4px 11px 5px 11px !important;
+    }
+
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      padding: 1px 11px;
+    }
+
+    .ant-form-item-control-input-content > :not(.ant-input-affix-wrapper) {
+      > .ant-input {
+        padding: 4px 11px 5px 11px !important;
+      }
+    }
+
+    .ant-form-item-control-input-content > {
+      .ant-btn.ant-btn-block {
+        height: 27px !important;
+        padding: 2px 11px !important;
+        .ant-btn-block-palcehoder,
+        .anticon.anticon-unordered-list {
+          color: rgba(0, 0, 0, 0.35);
+        }
+      }
+    }
+
+    .ant-input-number {
+      width: 100%;
+    }
+
+    // .ant-form-item-with-help .ant-form-item-explain {
+    //   bottom: -47%;
+    // }
+
+    span.ant-radio + * {
+      transform: translateY(-2px);
+    }
+  }
+
+  // 不显示解释信息 距离底部间距较小
+  .ant-form.noExplainAntForm,
+  .ant-pro-steps-form {
+    .ant-form-item {
+      margin-bottom: 6px !important;
+    }
+    .ant-form-item-explain {
+      pointer-events: none;
+      right: 28px;
+      width: auto;
+      bottom: 40%;
+      position: absolute;
+      transform: scale(0.92);
+      // display: none !important;
+    }
+  }
+
+  .ant-pro-form-group-title {
+    margin-left: 10px;
+    color: @primary-6;
+  }
+  .ant-row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .ant-pro-form-group .ant-row {
+    margin-right: -2px !important;
+    margin-left: -2px !important;
+  }
+}
+
+// 全屏幕弹窗
+.ant-modal.ModalFullScreen {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  max-width: calc(100vw - 1px) !important;
+  height: 100% !important;
+  padding-bottom: 0 !important;
+  .ant-modal-content {
+    height: 100% !important;
+  }
+  .ant-modal-body {
+    height: calc(100% - 65px) !important;
+    max-height: calc(100% - 65px) !important;
+    .ant-pro-page-container,
+    .ant-pro-grid-content,
+    .ant-pro-grid-content-children,
+    .ant-pro-layout-watermark-wrapper,
+    .ant-pro-page-container-children-content {
+      height: 100% !important;
+      > section {
+        height: 100% !important;
+      }
+    }
+  }
+  .react-draggable {
+    height: 100% !important;
+    transform: translate(0, 0) !important;
+  }
+  .react-draggable.react-draggable-dragged {
+    height: 100% !important;
+    transform: translate(0, 0) !important;
+  }
+}
+
+.ant-modal.ModalFullScreen.NoFooter {
+  .ant-modal-body {
+    height: calc(100% - 28px) !important;
+    max-height: calc(100% - 28px) !important;
+  }
+}
+
+// 操作按钮在顶部
+.ant-modal.SubmiterAsHeader {
+  .ant-modal-body {
+    // 按钮渲染在标题区域
+    .ant-pro-page-container-warp {
+      border: none;
+      .ant-page-header {
+        padding: 0;
+      }
+      .ant-page-header-heading-left {
+        margin: 0 0 4px 0;
+      }
+      .ant-page-header-heading-title {
+        padding: 0 12px;
+        .ant-btn {
+          margin-right: 8px;
+        }
+      }
+    }
+    // 内容区域减去标题宽度
+    .ant-pro-grid-content {
+      height: calc(100% - 30px) !important;
+    }
+  }
+}
+
+/* stylelint-disable-next-line CssSyntaxError */
+.ant-modal-confirm {
+  .ant-modal-body {
+    padding: 24px 24px 13px !important;
+  }
+  .ant-modal-confirm-btns {
+    margin-top: 16px !important;
+  }
+}
+.ant-modal-confirm-body .ant-modal-confirm-content {
+  font-size: 13px !important;
+}
+
+.maskNonePointerEvents {
+  pointer-events: none !important;
+}
+
+.react-resizable-handle-modal {
+  > .react-resizable-handle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 6px;
+    height: 6px;
+    cursor: nwse-resize;
+    background-color: @primary-6;
+  }
+  > .react-resizable-handle-se {
+    cursor: nwse-resize !important;
+  }
+}
+
+// 调整大小后
+.resizableModal {
+  .ant-pro-grid-content,
+  .ant-pro-grid-content-children,
+  .ant-pro-layout-watermark-wrapper,
+  .ant-pro-page-container-children-content {
+    height: 100%;
+    > section {
+      height: 100% !important;
+    }
+  }
+}

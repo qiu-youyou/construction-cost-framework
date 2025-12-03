@@ -1,0 +1,83 @@
+// 表单的间隔 错误文字的大小
+.ant-form:not('.ant-form-large') {
+  .ant-form-item-with-help {
+    margin-bottom: @form-item-margin-bottom;
+  }
+  .ant-form-item-with-help .ant-form-item-explain {
+    position: absolute;
+    bottom: 46%;
+  }
+  .ant-show-help-leave {
+    display: none;
+  }
+  .ant-form-item-explain,
+  .ant-form-item-extra {
+    font-size: 12px;
+  }
+}
+
+// dropdown
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  padding: 1px 6px;
+}
+.ant-dropdown-menu-title-content {
+  margin: 2px 5px;
+}
+
+.ant-select-dropdown {
+  width: max-content;
+  min-width: 180px !important;
+  // max-width: max-content;
+}
+.rc-virtual-list {
+  min-width: 160px !important;
+}
+// disabed 样式
+.ant-input[disabled],
+.ant-picker-input > input[disabled],
+.ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-input-number-disabled,
+.ant-btn-block[disabled],
+.ant-btn-block[disabled]:hover,
+.ant-select-multiple .ant-select-selection-item-content,
+.ant-radio-disabled + span {
+  color: #0d0d0d !important;
+}
+
+// 自定义布局
+.layout-col-24 {
+  width: 100%;
+  .ant-col-14 {
+    max-width: 100%;
+  }
+}
+
+// large 尺寸
+.ant-form-large {
+  .ant-form-item {
+    margin-bottom: 34px;
+  }
+  .ant-form-item-with-help .ant-form-item-explain {
+    margin-top: 2px;
+  }
+  .ant-btn-lg {
+    height: 28px;
+    padding: 1px 12px;
+  }
+  .ant-form-item-label > label {
+    font-size: 14px;
+  }
+  .SchemaFormFooter {
+    text-align: right;
+  }
+}
+
+.SelectIcons {
+  font-size: 13px;
+  span.anticon {
+    font-size: 15px;
+    color: #0d0d0d;
+    margin-right: 3px;
+  }
+}

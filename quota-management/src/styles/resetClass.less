@@ -1,0 +1,99 @@
+// textarea
+.resetDescTextAreaSection > {
+  height: 100%;
+  padding-top: 4px;
+  .ant-form-item {
+    height: 100% !important;
+
+    .ant-row.ant-form-item-row {
+      height: 100% !important;
+    }
+    .ant-form-item-control {
+      height: 100% !important;
+      .ant-form-item-control-input {
+        height: 100% !important;
+        .ant-form-item-control-input-content {
+          height: 100% !important;
+        }
+      }
+    }
+  }
+
+  .ant-input-textarea.ant-input-textarea-show-count {
+    height: calc(100% - 18px) !important;
+    margin: 0 5px;
+    > .ant-input {
+      height: 100% !important;
+      font-size: 12px;
+      line-height: 22px;
+      padding: 6px 8px;
+    }
+  }
+
+  .ant-input-textarea.ant-input-textarea-show-count.resetDescTextArea {
+    textarea {
+      padding-top: 21px;
+    }
+  }
+}
+
+// tab pane
+.resetTabsPaneSection {
+  .ant-tabs-nav-wrap {
+    margin-left: 384px;
+  }
+}
+
+.ant-menu-vertical .ant-menu-item,
+.ant-menu-vertical-left .ant-menu-item,
+.ant-menu-vertical-right .ant-menu-item,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-submenu-title,
+.ant-menu-vertical-left .ant-menu-submenu-title,
+.ant-menu-vertical-right .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-submenu-title {
+  padding: 0 5px;
+}
+
+.ant-pro-sider .ant-menu-item .ant-menu-item-icon + span,
+.ant-pro-sider.ant-layout-sider-collapsed .ant-menu-item .ant-menu-item-icon + span,
+.ant-pro-sider .ant-menu-submenu-title .ant-menu-item-icon + span,
+.ant-pro-sider.ant-layout-sider-collapsed .ant-menu-submenu-title .ant-menu-item-icon + span,
+.ant-pro-sider .ant-menu-item .anticon + span,
+.ant-pro-sider.ant-layout-sider-collapsed .ant-menu-item .anticon + span,
+.ant-pro-sider .ant-menu-submenu-title .anticon + span,
+.ant-pro-sider.ant-layout-sider-collapsed .ant-menu-submenu-title .anticon + span {
+  margin-left: 2px;
+}
+
+/** 去掉剪切 */
+button.ant-btn.ant-btn-link.LinkButtonCut {
+  display: none !important;
+}
+
+// .base-table-section .ant-pro-table .ant-table.ant-table-small .ant-table-tbody > tr > td[rowspan] {
+// }
+
+.form-item-custom .ant-btn:not(.ant-btn-lg):not(.ant-btn-circle):not(.ant-btn-custom) {
+  // height: 43px !important;
+  // line-height: 24px !important;
+  height: 100% !important;
+  vertical-align: top;
+  position: absolute;
+  margin-top: 0.4px;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  z-index: 1;
+  color: #fff;
+  background: #00489d;
+  border-color: #00489d;
+  &:hover {
+    color: #fff;
+  }
+}
+.ant-modal .ant-form .form-item-custom textarea.ant-input {
+  min-height: 27px;
+  height: 27px;
+  line-height: 1.3337;
+}

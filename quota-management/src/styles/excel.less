@@ -1,0 +1,113 @@
+.JD-STEPS-CONTAINER {
+  position: relative;
+  height: 100%;
+  padding: 10px 5px 5px 5px;
+
+  // 步骤器
+  .JD-STEPS-HEADER {
+    width: 700px;
+    margin: 0 auto;
+    .ant-steps {
+      // 每一个步骤
+      .ant-steps-item-container {
+        // 每一个步骤的内容 圆点
+        .ant-steps-item-icon {
+          width: 32px;
+          height: 32px;
+          line-height: 30px;
+        }
+
+        .ant-steps-item-icon,
+        .ant-steps-item-content {
+          vertical-align: middle;
+        }
+        .ant-steps-item-title {
+          font-size: 14px;
+        }
+      }
+      .ant-steps-item-icon .ant-steps-icon {
+        top: 0;
+      }
+    }
+
+    .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+      color: rgba(0, 0, 0, 0.75);
+    }
+
+    .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+      color: @primary-7;
+    }
+  }
+
+  // 步骤按钮
+  .JD-STEPS-FOOTER {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    // position: absolute;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    bottom: 0;
+
+    .ant-btn-lg {
+      height: 27px;
+      padding: 0px 14px;
+      font-size: 13px;
+      border-radius: 2px;
+    }
+  }
+
+  // 内容
+  .JD-STEPS-CONTENT {
+    margin-top: 5px;
+    max-height: calc(100% - 80px);
+    overflow-y: auto;
+  }
+  .JD-STEPS-CONTENT.column {
+    max-height: calc(100% - 75px);
+    height: calc(100% - 75px);
+    margin-top: 5px;
+    .ant-tabs-tab .anticon {
+      margin-right: 1px;
+    }
+    .ant-pro-card-tabs .ant-tabs-top > .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab + .ant-tabs-tab {
+      margin: 0 0 0 15px;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border: 1px solid #00489d;
+      color: #104c90;
+      font-weight: 700;
+    }
+    .ant-select-selection-placeholder {
+      color: #ff6f6f;
+    }
+  }
+
+  // loading
+  .ant-spin-nested-loading {
+    width: 100%;
+    height: 100%;
+    > div > .ant-spin {
+      max-height: 100%;
+    }
+    .ant-spin-container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #JDCOMPONENTS_EXCELUPLOADPRO_EXCELTABLE {
+    width: 100%;
+    height: calc(100% - 45px);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    .fortune-cols-change-size {
+      display: none;
+    }
+  }
+}
+
+.JDUploadFileDraggerContainer {
+  .ant-upload-list-item {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+}

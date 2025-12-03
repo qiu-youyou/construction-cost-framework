@@ -1,0 +1,84 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.process_history {
+  width: 100%;
+  min-height: 240px;
+  padding-top: 10px;
+  :global .ant-col {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  :global(.ant-card) {
+    height: 100% !important;
+    min-height: 180px !important;
+    background: #fbfafb;
+  }
+  :global(.ant-card-head) {
+    min-height: 10px;
+  }
+  :global(.ant-card-head-title) {
+    padding: 2px 0 !important;
+    color: @primary-5;
+    font-size: 12px !important;
+  }
+  :global(.ant-timeline-item-head) {
+    top: 50% !important;
+    transform: translateY(-12px) !important;
+  }
+  :global(.ant-timeline-item-content) {
+    margin: 0 0 0 18px !important;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  :global(.ant-timeline-item-tail) {
+    height: calc(100%) !important;
+  }
+  :global(.ant-timeline-item-last > .ant-timeline-item-content) {
+    min-height: 0 !important;
+  }
+  :global(.ant-timeline) {
+    padding: 6px 6px 0 6px;
+  }
+  :global(.ant-timeline-item) {
+    padding-bottom: 8px !important;
+  }
+}
+
+/**
+ * @Author: LMC
+ * @Description: 流程章的样式修改改为水平居中，多章并排样式
+ * @Date: 2024-01-24 09:44:44
+ * @return {*}
+ */
+.imageSection {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  display:flex;
+  justify-content: center;
+  top: 21px;
+  z-index: 1;
+  :global(.ant-image) {
+    margin-right: 5px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+}
+
+// .imageSection {
+//   position: absolute;
+//   background-color: rgba(0, 0, 0, 0);
+//   pointer-events: none;
+//   right: 10px;
+//   bottom: 10px;
+//   z-index: 1;
+//   :global(.ant-image) {
+//     margin-right: 5px;
+//     max-width: 100px;
+//     max-height: 100px;
+//     border-radius: 100%;
+//     overflow: hidden;
+//   }
+// }

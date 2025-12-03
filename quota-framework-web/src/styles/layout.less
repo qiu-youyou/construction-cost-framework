@@ -1,0 +1,33 @@
+// root 下 layout 高度 100%
+#root {
+  height: 100%;
+  .ant-pro-grid-content,
+  .ant-pro-grid-content-children {
+    height: 100%;
+  }
+}
+
+// root 下的 page
+#root-page {
+  height: 100%;
+  background-color: rgba(@primary-3, 0.01);
+  .ant-pro-page-container,
+  .ant-pro-page-container-children-content {
+    height: 100%;
+  }
+  // 页面容器对内部的距离
+  .ant-pro-page-container-children-content {
+    margin: 0;
+  }
+}
+
+.page-children {
+  margin: 5px;
+}
+
+.__dumi-default-menu-header {
+  padding-top: 0 !important;
+  .__dumi-default-menu-logo {
+    display: none !important;
+  }
+}

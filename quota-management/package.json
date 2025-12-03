@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "name": "zhong-nan-dian-jian",
+  "scripts": {
+    "build": "umi build",
+    "mock": "cross-env APP_ENV=mock umi dev",
+    "dev": " cross-env APP_ENV=dev MOCK=none umi dev"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@ant-design/pro-components": "1.1.25",
+    "@ant-design/pro-table": "2.76.4",
+    "@fortune-sheet/react": "^0.19.2",
+    "@jiaminghi/data-view-react": "^1.2.5",
+    "@types/fs-extra": "^11.0.1",
+    "@uiw/react-split": "^5.9.0",
+    "antd": "^4.20.0",
+    "base-64": "^1.0.0",
+    "braft-editor": "^2.3.9",
+    "jd-framework-web": "^1.2.5",
+    "lodash": "^4.17.21",
+    "luckyexcel": "^1.0.1",
+    "qs": "^6.11.2",
+    "react": "17.x",
+    "react-dom": "17.0.0",
+    "react-draggable": "^4.4.5",
+    "react-full-screen": "^1.1.1",
+    "react-resizable": "^3.0.5",
+    "react-simple-verify": "^1.0.11",
+    "umi": "3.5.0",
+    "use-switch-tabs": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/base-64": "^1.0.0",
+    "@types/lodash": "^4.14.195",
+    "@types/mockjs": "^1.0.7",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@types/react-resizable": "^3.0.4",
+    "@umijs/plugin-esbuild": "^1.4.2",
+    "@umijs/preset-react": "1.x",
+    "cross-env": "^7.0.3",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2"
+  },
+  "resolutions": {
+    "@types/react": "17.0.0"
+  }
+}

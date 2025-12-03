@@ -1,0 +1,32 @@
+@import (reference) '~antd/es/style/themes/index';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 140px;
+  }
+}
+
+.rightContent {
+  height: 30px;
+  display: inline-block;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  margin-top: 2px;
+  color: @primary-color;
+  vertical-align: top;
+  border: 1px solid @white;
+  background: rgba(255, 255, 255, 0.85);
+}
+.rightUserName {
+  transform: translateY(-1px);
+  display: inline-block;
+}

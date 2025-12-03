@@ -1,0 +1,89 @@
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-pro-sider.ant-laayout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.ant-pro-table-search,
+.noExplainAntForm {
+  input::-webkit-input-placeholder,
+  .ant-select-selection-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgba(0, 0, 0, 0) !important;
+  }
+
+  :-moz-placeholder,
+  .ant-select-selection-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgba(0, 0, 0, 0) !important;
+  }
+
+  ::-moz-placeholder,
+  .ant-select-selection-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgba(0, 0, 0, 0) !important;
+  }
+
+  input:-ms-input-placeholder,
+  .ant-select-selection-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(0, 0, 0, 0) !important;
+  }
+
+  input::-ms-input-placeholder,
+  .ant-select-selection-placeholder {
+    /* Microsoft Edge */
+    color: rgba(0, 0, 0, 0) !important;
+  }
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset !important;
+}
+
+// html {
+// 	-webkit-filter: grayscale(100%);
+// 	filter: grayscale(100%);
+// 	filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+// }

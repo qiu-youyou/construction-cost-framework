@@ -1,0 +1,617 @@
+.ant-btn:not(.ant-btn-lg):not(.ant-btn-circle):not(.ant-btn-custom) {
+  height: 22px !important;
+  padding: 0 5px !important;
+  line-height: 20px !important;
+  border-radius: 2px;
+}
+
+.ant-btn.ant-btn-custom {
+  position: absolute;
+  top: 0.5px;
+  right: 0;
+  width: 20px !important;
+  padding: 3.4px 0 !important;
+  color: @primary-6 !important;
+  text-align: center;
+  &:hover {
+    color: @primary-7 !important;
+  }
+  .ant-typography-expand,
+  .ant-typography-edit,
+  .ant-typography-copy {
+    margin-left: 0 !important;
+  }
+}
+
+.ant-form .ant-form-item-control-input-content .ant-btn.ant-btn-block.ant-btn-custom-choose {
+  line-height: 22px !important;
+  text-align: left !important;
+  span:first-child {
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.ant-btn-circle {
+  border-radius: 50% !important;
+}
+
+// 只有图标
+.ant-btn-icon-only {
+  padding: 1px !important;
+  > * {
+    color: @primary-5;
+    font-size: 17px !important;
+    &:hover {
+      color: @primary-7;
+    }
+  }
+}
+
+// 只有文字
+.ant-btn-text {
+  color: rgba(#000, 0.55) !important;
+  :hover {
+    color: @primary-5;
+  }
+}
+
+// text
+.ant-btn.ant-btn-text:not(.ant-btn-lg) {
+  padding: 2.7px 4px;
+  :hover {
+    color: @primary-6;
+    background-color: none;
+  }
+}
+
+// checkbox
+.ant-checkbox-inner {
+  width: 14px !important;
+  height: 14px !important;
+}
+.ant-tree-checkbox-inner::after {
+  top: 49%;
+  width: 4.51428571px;
+  height: 7.14285714px;
+  font-size: 12px;
+}
+
+.ant-btn > .anticon + span,
+.ant-btn > span + .anticon {
+  margin-left: 4px;
+}
+
+.ant-btn-dangerous.ant-btn-primary {
+  color: #d15b47;
+  background: #fff;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #d15b47 !important;
+    border-color: #d15b47 !important;
+  }
+}
+
+@PlusButtonColor: @primary-6;
+@PlusButtonColorHover: rgba(@primary-6, 0.8);
+.PlusButton {
+  color: #fff;
+  background: @PlusButtonColor;
+  border-color: @PlusButtonColor;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: @PlusButtonColorHover !important;
+    border-color: @PlusButtonColorHover !important;
+  }
+}
+.PlusButtonLink {
+  color: @PlusButtonColor;
+  &:hover,
+  &:focus {
+    color: @PlusButtonColorHover;
+  }
+}
+
+@EditButtonColor: @primary-5;
+@EditButtonColorHover: rgba(@primary-5, 0.8);
+.EditButton {
+  color: #fff;
+  background: @EditButtonColor;
+  border-color: @EditButtonColor;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: @EditButtonColorHover !important;
+    border-color: @EditButtonColorHover !important;
+  }
+}
+.EditButtonLink {
+  color: @EditButtonColor;
+  &:hover,
+  &:focus {
+    color: @EditButtonColorHover;
+  }
+}
+
+@DetailsButtonColor: @primary-6;
+@DetailsButtonColorHover: @primary-5;
+.DetailsButton {
+  color: #fff;
+  background: @DetailsButtonColor;
+  border-color: @DetailsButtonColor;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: @DetailsButtonColorHover !important;
+    border-color: @DetailsButtonColorHover !important;
+  }
+}
+.DetailsButtonLink {
+  color: @DetailsButtonColor;
+  &:hover,
+  &:focus {
+    color: @DetailsButtonColorHover;
+  }
+}
+
+@EnableButtonColor: #08979c;
+@EnableButtonColorHover: #08979c;
+.EnableButton {
+  color: #fff;
+  color: @EnableButtonColor;
+  border-color: @EnableButtonColor;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: rgba(@EnableButtonColorHover, 0.8) !important;
+    border-color: rgba(@EnableButtonColorHover, 0.1) !important;
+  }
+}
+.EnableButtonLink {
+  color: @EnableButtonColor;
+  &:hover,
+  &:focus {
+    color: @EnableButtonColorHover;
+  }
+}
+
+@DisableButtonColor: #d48806;
+@DisableButtonColorHover: #d48806;
+.DisableButton {
+  color: #fff;
+  color: @DisableButtonColor;
+  border-color: @DisableButtonColor;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: rgba(@DisableButtonColorHover, 0.8) !important;
+    border-color: rgba(@DisableButtonColorHover, 0.1) !important;
+  }
+}
+
+.DisableButtonLink {
+  color: @DisableButtonColor;
+  &:hover,
+  &:focus {
+    color: @DisableButtonColorHover;
+  }
+}
+
+.ImportButton {
+  color: @primary-7 !important;
+  border-color: @primary-7;
+  &:hover,
+  &:focus {
+    color: #fff !important;
+    background: @primary-6 !important;
+    border-color: @primary-6 !important;
+  }
+}
+
+.ExportButton {
+  color: @primary-6 !important;
+  border-color: @primary-6 !important;
+  &:hover,
+  &:focus {
+    color: #fff !important;
+    background: @primary-5 !important;
+    border-color: @primary-5 !important;
+  }
+}
+
+.ExpandButton {
+  color: #1890ff !important;
+  border-color: #1890ff !important;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: rgba(#1890ff, 0.1) !important;
+  }
+}
+
+.FoldButton {
+  color: #13c2c2 !important;
+  border-color: #13c2c2 !important;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: rgba(#13c2c2, 0.1) !important;
+  }
+}
+
+.MoveTopButton {
+  color: #a0d911 !important;
+  border-color: #a0d911 !important;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: rgba(#a0d911, 0.1) !important;
+  }
+}
+
+.MoveDownButton {
+  color: #52c41a !important;
+  border-color: #52c41a !important;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: rgba(#52c41a, 0.1) !important;
+  }
+}
+
+/** 纯色按钮 */
+.ButtonPrimary {
+  color: #fff;
+  background: @primary-6;
+  border-color: @primary-6;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: @primary-5;
+    border-color: @primary-5;
+  }
+}
+
+.ButtonGeekBlue {
+  color: #fff;
+  background: #2f54eb;
+  border-color: #2f54eb;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #597ef7;
+    border-color: #597ef7;
+  }
+}
+
+.ButtonBlue {
+  color: #fff;
+  background: #096dd9;
+  border-color: #096dd9;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #1890ff;
+    border-color: #1890ff;
+  }
+}
+
+.ButtonCyan {
+  color: #fff;
+  background: #006d75;
+  border-color: #006d75;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #08979c;
+    border-color: #08979c;
+  }
+}
+
+.ButtonGreen {
+  color: #fff;
+  background: #135200;
+  border-color: #135200;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #237804;
+    border-color: #237804;
+  }
+}
+
+.ButtonLime {
+  color: #fff;
+  background: #5b8c00;
+  border-color: #5b8c00;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #7cb305;
+    border-color: #7cb305;
+  }
+}
+
+.ButtonYellow {
+  color: #fff;
+  background: #fadb14;
+  border-color: #fadb14;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #ffec3d;
+    border-color: #ffec3d;
+  }
+}
+
+.ButtonGold {
+  color: #fff;
+  background: #d48806;
+  border-color: #d48806;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #faad14;
+    border-color: #faad14;
+  }
+}
+
+.ButtonOrange {
+  color: #fff;
+  background: #d46b08;
+  border-color: #d46b08;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #ffa940;
+    border-color: #ffa940;
+  }
+}
+
+.ButtonVolcano {
+  color: #fff;
+  background: #fa541c;
+  border-color: #fa541c;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #ff7a45;
+    border-color: #ff7a45;
+  }
+}
+
+.ButtonRed {
+  color: #fff;
+  background: #d15b47;
+  border-color: #d15b47;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #e4634c;
+    border-color: #e4634c;
+  }
+}
+
+.ButtonPurple {
+  color: #fff;
+  background: #722ed1;
+  border-color: #722ed1;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #9254de;
+    border-color: #9254de;
+  }
+}
+
+.ButtonMagenta {
+  color: #fff;
+  background: #eb2f96;
+  border-color: #eb2f96;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #f759ab;
+    border-color: #f759ab;
+  }
+}
+
+/** 只有边框色的按钮 */
+.BorderButtonPrimary {
+  color: @primary-6;
+  border-color: @primary-6;
+}
+
+.BorderButtonGeekBlue {
+  color: #2f54eb;
+  border-color: #2f54eb;
+  &:hover {
+    color: rgba(#2f54eb, 0.8);
+    border-color: rgba(#2f54eb, 0.8);
+  }
+}
+
+.BorderButtonBlue {
+  color: #096dd9;
+  border-color: #096dd9;
+  &:hover {
+    color: rgba(#096dd9, 0.8);
+    border-color: rgba(#096dd9, 0.8);
+  }
+}
+
+.BorderButtonCyan {
+  color: #006d75;
+  border-color: #006d75;
+  &:hover {
+    color: rgba(#006d75, 0.8);
+    border-color: rgba(#006d75, 0.8);
+  }
+}
+
+.BorderButtonGreen {
+  color: #135200;
+  border-color: #135200;
+  &:hover {
+    color: rgba(#135200, 0.8);
+    border-color: rgba(#135200, 0.8);
+  }
+}
+
+.BorderButtonLime {
+  color: #5b8c00;
+  border-color: #5b8c00;
+  &:hover {
+    color: rgba(#5b8c00, 0.8);
+    border-color: rgba(#5b8c00, 0.8);
+  }
+}
+
+.BorderButtonYellow {
+  color: #fadb14;
+  border-color: #fadb14;
+  &:hover {
+    color: rgba(#fadb14, 0.8);
+    border-color: rgba(#fadb14, 0.8);
+  }
+}
+
+.BorderButtonGold {
+  color: #d48806;
+  border-color: #d48806;
+  &:hover {
+    color: rgba(#d48806, 0.8);
+    border-color: rgba(#d48806, 0.8);
+  }
+}
+
+.BorderButtonOrange {
+  color: #d46b08;
+  border-color: #d46b08;
+  &:hover {
+    color: rgba(#d46b08, 0.8);
+    border-color: rgba(#d46b08, 0.8);
+  }
+}
+
+.BorderButtonVolcano {
+  color: #fa541c;
+  border-color: #fa541c;
+  &:hover {
+    color: rgba(#fa541c, 0.8);
+    border-color: rgba(#fa541c, 0.8);
+  }
+}
+
+.BorderButtonRed {
+  color: #d15b47;
+  border-color: #d15b47;
+  &:hover {
+    color: rgba(#d15b47, 0.8);
+    border-color: rgba(#d15b47, 0.8);
+  }
+}
+
+.BorderButtonPurple {
+  color: #722ed1;
+  border-color: #722ed1;
+  &:hover {
+    color: rgba(#722ed1, 0.8);
+    border-color: rgba(#722ed1, 0.8);
+  }
+}
+
+.BorderButtonMagenta {
+  color: #eb2f96;
+  border-color: #eb2f96;
+  &:hover {
+    color: rgba(#eb2f96, 0.8);
+    border-color: rgba(#eb2f96, 0.8);
+  }
+}
+
+.linkAButton {
+  color: @primary-5;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: @primary-6;
+  }
+}
+
+.linkAButtonDanger {
+  color: #434343;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: #ea3c3f !important;
+  }
+}
+
+.gap-wrapper {
+  margin: 0 -4px;
+  color: #8c8c8c;
+}
+
+.LinkButtonCopy {
+  color: #722ed1;
+}
+
+.LinkButtonCut {
+  color: #d48806;
+}
+
+.LinkButtonPast {
+  color: #08979c;
+}
+
+.ant-tooltip-inner {
+  min-height: 28px !important;
+}
+
+.ant-btn[disabled],
+.ant-btn[disabled]:hover,
+.ant-btn[disabled]:focus,
+.ant-btn[disabled]:active,
+.ant-btn-dangerous.ant-btn-primary[disabled],
+.ant-btn-dangerous.ant-btn-primary[disabled]:hover,
+.ant-btn-dangerous.ant-btn-primary[disabled]:focus,
+.ant-btn-dangerous.ant-btn-primary[disabled]:active {
+  color: rgba(0, 0, 0, 0.25) !important;
+  text-shadow: none !important;
+  background: #f5f5f5 !important;
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
+}
+
+button.ant-btn.ant-btn-text.ant-btn-sm.ant-btn-icon-only.ant-upload-list-item-card-actions-btn {
+  width: 32px;
+  transform: translateY(-1px);
+}
+
+.ant-upload-list-item {
+  height: 20px !important;
+  margin-top: 4px !important;
+}
+
+.tooltipContent {
+  padding-top: 14px;
+  p {
+    line-height: 5px !important;
+  }
+}
+
+.fullScreenToggleButton {
+  width: 22px;
+  height: 22px;
+  padding: 1px;
+  color: @primary-6;
+  font-size: 13px;
+  line-height: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}

@@ -1,0 +1,69 @@
+body {
+  scrollbar-arrow-color: rgba(#000, 0);
+  scrollbar-face-color: #cbcbcb;
+  /* stylelint-disable-next-line property-no-unknown */
+  scrollbar-3dlight-color: rgba(#000, 0);
+  scrollbar-highlight-color: #333;
+  // /*滚动条空白部分的颜色*/
+  scrollbar-shadow-color: rgba(#000, 0);
+  // /*滚动条阴影的颜色*/
+  scrollbar-darkshadow-color: green;
+  // /*滚动条强阴影的颜色*/
+  scrollbar-track-color: #eee;
+  // /*滚动条背景颜色*/
+
+  scrollbar-base-color: black;
+  // Cursor: url(mouse.cur);
+}
+
+::-webkit-scrollbar {
+  /* 滚动条整体部分 */
+  width: 8px;
+}
+
+::-webkit-scrollbar-button {
+  /* 滚动条两端的按钮 */
+  width: 0;
+  height: 0;
+  // background-color: rgba(#000, 0);
+  // background: #f1f1f1;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  /* 外层轨道 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 内层轨道，滚动条中间部分 */
+  // background-color: rgba(#000, 0.05);
+  // border: 1px solid rgba(#000, 0.03);
+  border-top: none;
+  border-bottom: none;
+  // border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* 滑块 */
+  width: 8px;
+  // background: rgba(135, 135, 135, 0.8);
+  background: #c1c1c1;
+  border-radius: 5px;
+  // background: #eff5fd;
+}
+
+::-webkit-scrollbar-corner {
+  /* 边角 */
+  width: 2px;
+  background-color: rgba(#000, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* 鼠标移入滑块 */
+  // background: #cedef9;
+  background: #a8a8a8;
+}

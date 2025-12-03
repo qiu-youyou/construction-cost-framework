@@ -1,0 +1,58 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.title {
+  height: 28px;
+  line-height: 28px;
+
+  h3 {
+    color: @primary-7;
+
+    .titleQuta {
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      margin-right: 10px;
+      background-color: @primary-7;
+      border-radius: 6px;
+      transform: translateY(25%);
+    }
+  }
+}
+
+.listWrap {
+  margin-top: 4px;
+  padding: 0 2px;
+  .listItem {
+    position: relative;
+    width: 95px;
+    height: 72px;
+    .listItemWrapper {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+    .listItemTitle {
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 500;
+      font-size: 12px;
+    }
+    :global(.ant-avatar) {
+      width: auto;
+      height: 26px;
+      margin-bottom: 6px;
+    }
+  }
+  .listItem:hover {
+    cursor: pointer;
+    :global(.ant-avatar) {
+      transform: scale(1.13);
+      transition: all 0.4s;
+    }
+    .listItemTitle {
+      color: @primary-6;
+      transition: all 0.5s;
+    }
+  }
+}

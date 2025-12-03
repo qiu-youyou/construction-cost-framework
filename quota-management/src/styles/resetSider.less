@@ -1,0 +1,161 @@
+// 菜单样式
+@menu-icon-right: 15px; // 菜单标题图标距离右侧
+@menu-submenu-title-left: 26px; // 菜单一级标题距离左侧
+@menu-submenu-subtitle-left: 52px; // 子级菜单标题距离左侧
+
+// 侧边栏通用样式
+.ant-pro-sider,
+.ant-pro-sider.ant-layout-sider-collapsed {
+  // 顶部 logo+title
+  .ant-pro-sider-logo {
+    padding: 11px 35px !important;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    h1 {
+      margin-left: 1px !important;
+      text-align: center;
+      line-height: 34px;
+      width: 115px;
+      font-size: 22px;
+    }
+  }
+
+  .ant-menu-item .ant-menu-item-icon + span,
+  .ant-menu-submenu-title .ant-menu-item-icon + span,
+  .ant-menu-item .anticon + span,
+  .ant-menu-submenu-title .anticon + span {
+    margin-left: 10px !important;
+  }
+  .ant-menu-submenu-title .anticon {
+    font-size: 15px !important;
+    transform: translateY(0.5px) !important;
+  }
+}
+
+.ant-pro-sider.ant-layout-sider-collapsed {
+  .ant-pro-sider-logo {
+    padding: 11px 7px !important;
+  }
+}
+
+// 侧边菜单栏布局
+.ant-menu-inline {
+  .ant-menu-sub .ant-menu-item-only-child {
+    padding-left: @menu-submenu-subtitle-left !important;
+  }
+  .ant-menu-item,
+  .ant-menu-submenu-title {
+    padding-left: @menu-submenu-title-left !important;
+    .ant-menu-submenu-title {
+      padding-left: 30px !important;
+    }
+  }
+}
+
+.ant-menu.ant-menu-inline-collapsed > .ant-menu-item .anticon {
+  font-size: 16px;
+}
+.ant-pro-sider-collapsed-button .anticon {
+  font-size: 18px;
+}
+
+// 暗色菜单 样式
+.ant-pro-sider.ant-layout-sider-dark {
+  // background-color: @primary-6 linear-gradient(0deg, @primary-6 @primary-7);
+  // background-color: @primary-6;\
+  background-color: #191a22 !important;
+
+  .ant-menu.ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub,
+  .ant-menu.ant-menu-dark .ant-menu-sub {
+    background: none !important;
+  }
+
+  .ant-menu-dark .ant-menu-item:hover,
+  .ant-menu-dark .ant-menu-submenu-title:hover {
+    background: @primary-5;
+  }
+  .ant-menu-dark .ant-menu-item,
+  .ant-menu-dark .ant-menu-item-group-title,
+  .ant-menu-dark .ant-menu-item > a,
+  .ant-menu-dark .ant-menu-item > span > a {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ant-menu.ant-menu-dark .ant-menu-sub {
+    background: @primary-7 !important;
+    color: rgba(255, 255, 255, 0.5);
+    text-indent: 6px;
+    font-weight: 700;
+  }
+
+  .ant-menu.ant-menu-dark .ant-menu-sub {
+    background-color: #101116 !important;
+  }
+
+  // 菜单文字
+  .ant-menu.ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+  }
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    // background: @primary-4;
+    background: none !important;
+    color: #fff;
+  }
+}
+
+// 暗色菜单折叠后
+.ant-menu.ant-menu-dark,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.ant-menu-dark .ant-menu-sub {
+  background-color: #101116 !important;
+}
+
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item > a,
+.ant-menu-dark .ant-menu-item > span > a {
+  color: @white;
+}
+
+// 暗色风格
+.ant-pro-header-dark {
+  .ant-pro-global-header {
+    color: @white;
+    background: linear-gradient(90deg, #104fb3, #1a9ffb) !important;
+  }
+}
+
+.ant-menu {
+  font-size: 14px;
+  font-weight: 600;
+}
+.ant-pro-global-header {
+  font-size: 14px;
+}
+
+.JDViewContainerVh {
+  height: calc(100vh - 65px);
+}
+
+.ant-avatar-sm {
+  transform: translateY(10px);
+}
+
+// logo
+.ant-pro-top-nav-header-logo {
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  img {
+    height: 36px;
+  }
+}

@@ -1,0 +1,61 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.title {
+  height: 28px;
+  line-height: 28px;
+
+  h3 {
+    color: @primary-7;
+
+    .titleQuta {
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      margin-right: 10px;
+      background-color: @primary-7;
+      border-radius: 6px;
+      transform: translateY(25%);
+    }
+  }
+}
+
+.headCalender {
+  height: 24px;
+  margin: 4px 0;
+  line-height: 24px;
+  text-align: center;
+  background-color: #f6f6fa;
+  border-radius: 16px;
+  :global(.ant-btn:not(.ant-btn-lg):not(.ant-btn-circle):not(.ant-btn-custom)) {
+    width: 20px !important;
+    padding: 0 3px !important;
+  }
+}
+
+.iconBtn {
+  transform: translateY(-30%);
+  color: #666 !important;
+  font-size: 12px;
+  height: 12px;
+  width: 12px;
+}
+.prevBtn {
+  float: left;
+  margin: 2px 2px;
+}
+.nextBtn {
+  float: right;
+  margin: 2px 2px;
+}
+.centerBtn {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+:global(.ant-picker-cell .ant-picker-cell-inner) {
+  border-radius: 50% !important;
+}
+:global(.ant-picker-date-panel .ant-picker-content th) {
+  width: 30px !important;
+}

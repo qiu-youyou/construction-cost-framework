@@ -1,0 +1,40 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.uploadInputWrapper {
+  height: 28px;
+  overflow: hidden;
+  transform: translateY(1.8px);
+  :global(.ant-upload-list-item) {
+    height: 26px !important;
+    margin-top: 0 !important;
+    border: 1px solid #d9d9d9;
+  }
+  :global(.ant-upload-list-item-card-actions-btn.ant-btn-sm) {
+    height: 26px;
+  }
+  :global(.ant-upload-list-text .ant-upload-span) {
+    padding: 0 5px 0 10px;
+  }
+  :global .ant-upload {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  :global .ant-upload-drag {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.uploadInputButton {
+  width: 100%;
+  height: 27px;
+  line-height: 24px;
+  border: 1px solid #d9d9d9;
+  &:hover,
+  &:focus {
+    border-color: @primary-6;
+  }
+  :global(.ant-btn) {
+    border: none;
+  }
+}

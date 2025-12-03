@@ -1,0 +1,99 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  background: @layout-body-background;
+
+  .loginGbVideo {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  > div {
+    z-index: 1;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+:global .ant-pro-form-login-main {
+  width: 340px !important;
+  button.ant-btn.ant-btn-primary.ant-btn-lg {
+    transform: translateY(48px) !important;
+  }
+
+  .ant-tabs {
+    margin-bottom: 10px;
+  }
+}
+
+:global .ant-pro-form-login-logo {
+  width: 38px !important;
+  height: 38px !important;
+  margin-bottom: 44px !important;
+  margin-right: 5px !important;
+}
+
+:global .ant-pro-form-login-title {
+  color: @primary-6 !important;
+  margin-bottom: 42px !important;
+  font-size: 23px !important;
+}
+
+:global .ant-pro-form-login-container {
+  z-index: 1;
+  width: max-content !important;
+  height: max-content !important;
+  margin: 0 auto !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(2px);
+  border-radius: 6px !important;
+  padding: 54px 50px 50px 50px !important ;
+  margin-top: 18vh !important;
+}
+
+:global .ant-pro-form-login-other {
+  margin-top: 16px !important;
+  transform: translateY(-48px) !important;
+}
+
+:global .simple-verify .verify-bar {
+  top: 0 !important;
+}
+
+:global .simple-verify .veriry-slide {
+  background-color: @primary-6 !important;
+}
+
+:global .ant-layout-footer {
+  position: absolute !important;
+  bottom: 10px !important;
+  left: 50% !important;
+  padding: 0 !important;
+  background: none !important;
+  transform: translateX(-50%) !important;
+  font-weight: 600;
+  .ant-pro-global-footer {
+    padding: 0 !important;
+  }
+  .ant-pro-global-footer-links a,
+  .ant-pro-global-footer-copyright {
+    color: @white !important;
+  }
+}
+
+.scanLoginForm {
+  :global(.ant-btn.ant-btn-primary.ant-btn-lg) {
+    display: none !important;
+  }
+}

@@ -1,0 +1,46 @@
+@import (reference) '~antd/es/style/themes/index';
+
+@EditMoreButtonColor: #2370c4;
+@EditMoreButtonColorHover: rgba(#2370c4, 0.8);
+.EditMoreButton {
+  color: #fff;
+  background: @EditMoreButtonColor;
+  border-color: @EditMoreButtonColor;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: @EditMoreButtonColorHover !important;
+    border-color: @EditMoreButtonColorHover !important;
+  }
+}
+
+.ClearInputButton {
+  transform: translate(2px, 5px);
+
+  position: absolute;
+  cursor: pointer;
+  // top: 50%;
+  // bottom: 6px;
+
+  color: #bfbfbf;
+  &:hover {
+    color: #8c8c8c;
+  }
+}
+
+.ant-tag .anticon {
+  transform: translateY(0) !important;
+}
+
+.BorderButtonRed {
+  color: #ff5f5f;
+  border-color: #ff5f5f;
+  &:hover {
+    color: rgba(#ff5f5f, 0.8);
+    border-color: rgba(#ff5f5f, 0.8);
+  }
+}
+
+button.ant-btn:not(.ant-btn-lg):not(.ant-btn-circle):not(.ant-btn-custom).ButtonHeight94 {
+  height: 94px !important;
+}

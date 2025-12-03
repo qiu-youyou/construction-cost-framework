@@ -1,0 +1,272 @@
+/*
+ * @Author: SHUANG
+ * @Date: 2023-07-20 15:04:34
+ * @LastEditors: s_qiu s.qiu@foxmail.com
+ * @LastEditTime: 2023-10-07 15:32:51
+ * @Description:
+ */
+module.exports = {
+  'POST /api/sys/link/indexQueryPageInfo.action': {
+    status: 'SUCCESS',
+    message: '查询成功!',
+    rows: [],
+  },
+
+  'POST /api/sys/log/operation/queryCurrentLoginPageInfo.action': {
+    status: 'SUCCESS',
+    rows: [
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '公告表',
+        businessMethod: '查询一条公告',
+        logOperation: '#action#-操作成功[{公告标题:#title#}]',
+        logInfo:
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+        ipAddress: '205.198.122.107,10.168.133.0',
+        operationType: '访问',
+        createTime: '2023-07-20',
+        date: '2023-07-20 17:42:06',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '公告表',
+        businessMethod: '查询一条公告',
+        logOperation: '#action#-操作成功[{公告标题:#title#}]',
+        logInfo:
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.203,10.168.228.128',
+        operationType: '访问',
+        createTime: '2023-07-20',
+        date: '2023-07-20 14:46:13',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '公告表',
+        businessMethod: '查询一条公告',
+        logOperation: '#action#-操作成功[{公告标题:#title#}]',
+        logInfo:
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.203,10.168.228.128',
+        operationType: '访问',
+        createTime: '2023-07-20',
+        date: '2023-07-20 14:46:11',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '公告表',
+        businessMethod: '查询一条公告',
+        logOperation: '#action#-操作成功[{公告标题:#title#}]',
+        logInfo:
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.203,10.168.228.128',
+        operationType: '访问',
+        createTime: '2023-07-20',
+        date: '2023-07-20 14:46:10',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '公告表',
+        businessMethod: '查询一条公告',
+        logOperation: '#action#-操作成功[{公告标题:#title#}]',
+        logInfo:
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.203,10.168.228.128',
+        operationType: '访问',
+        createTime: '2023-07-20',
+        date: '2023-07-20 14:46:08',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '公告表',
+        businessMethod: '查询一条公告',
+        logOperation: '#action#-操作成功[{公告标题:#title#}]',
+        logInfo:
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.203,10.168.228.128',
+        operationType: '访问',
+        createTime: '2023-07-20',
+        date: '2023-07-20 14:46:03',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.203,10.168.228.128',
+        operationType: 'login',
+        createTime: '2023-07-20',
+        date: '2023-07-20 14:44:06',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82',
+        ipAddress: '10.10.233.57',
+        operationType: 'login',
+        createTime: '2023-07-20',
+        date: '2023-07-20 14:14:56',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82',
+        ipAddress: '10.10.238.254',
+        operationType: 'login',
+        createTime: '2023-07-19',
+        date: '2023-07-19 17:40:21',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '签证',
+        businessMethod: '操作签证信息',
+        logOperation: '#action#签证-签证没有PM成本中心，不能提交！[{id:EF62F2A4E19256B3E053E2700A0A1D74}]',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        ipAddress: '60.215.212.44,10.168.3.128',
+        operationType: '操作',
+        createTime: '2023-07-19',
+        date: '2023-07-19 09:15:36',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        ipAddress: '60.215.212.44,10.168.3.128',
+        operationType: 'login',
+        createTime: '2023-07-19',
+        date: '2023-07-19 09:09:37',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        ipAddress: '10.13.5.2',
+        operationType: 'login',
+        createTime: '2023-07-18',
+        date: '2023-07-18 16:01:40',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '答复流程',
+        businessMethod: '操作答复流程信息',
+        logOperation: '#action#答复流程-操作成功![{id:#id#}]',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36',
+        ipAddress: '121.36.0.95,10.168.3.128',
+        operationType: '操作',
+        createTime: '2023-07-18',
+        date: '2023-07-18 09:33:49',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36',
+        ipAddress: '121.36.0.95,10.168.3.128',
+        operationType: 'login',
+        createTime: '2023-07-18',
+        date: '2023-07-18 09:33:13',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: 'RCMS工单',
+        businessMethod: '查询验收工序信息',
+        logOperation: '操作成功[{id:F97FD8AA010D713FE053E2700A0A9888}]',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.254,10.168.228.128',
+        operationType: '操作',
+        createTime: '2023-07-17',
+        date: '2023-07-17 10:29:58',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.254,10.168.228.128',
+        operationType: 'login',
+        createTime: '2023-07-17',
+        date: '2023-07-17 10:29:43',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.254,10.168.228.128',
+        operationType: 'login',
+        createTime: '2023-07-17',
+        date: '2023-07-17 09:47:26',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.254,10.168.228.128',
+        operationType: 'login',
+        createTime: '2023-07-17',
+        date: '2023-07-17 09:44:33',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '登录',
+        logOperation: '登录成功!',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.63',
+        ipAddress: '112.96.249.106,10.168.133.0',
+        operationType: 'login',
+        createTime: '2023-07-16',
+        date: '2023-07-16 07:35:29',
+      },
+      {
+        userName: '承包商用户01',
+        logUser: 'CBS01',
+        business: '固定单价结算单',
+        businessMethod: '一键打包验证',
+        logOperation: '#action#一键打包验证',
+        logInfo:
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+        ipAddress: '117.129.8.254,10.168.133.0',
+        operationType: '操作',
+        createTime: '2023-07-14',
+        date: '2023-07-14 14:25:39',
+      },
+    ],
+    message: '操作成功',
+    total: 19821,
+  },
+};
